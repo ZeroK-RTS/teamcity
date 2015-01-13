@@ -70,6 +70,13 @@ copy /Y ZeroKLobby\bin\release\Zero-K.version.txt c:\projekty\test.zero-k.info\w
           <param name="info-format" value="%build.number%-TEST-%build.vcs.number%" />
         </parameters>
       </extension>
+      <extension id="BUILD_EXT_2" type="VcsLabeling">
+        <parameters>
+          <param name="labelingPattern" value="TEST-%system.build.number%" />
+          <param name="successfulOnly" value="true" />
+          <param name="vcsRootId" value="ZeroK_ZeroKInfrastructure" />
+        </parameters>
+      </extension>
     </build-extensions>
     <cleanup />
   </settings>
