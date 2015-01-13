@@ -21,10 +21,14 @@
           <param name="vs.version" value="vs2013" />
         </parameters>
       </runner>
-      <runner id="RUNNER_31" name="Deploy springie" type="simpleRunner">
+      <runner id="RUNNER_35" name="Deploy Uberserver" type="simpleRunner">
         <parameters>
-          <param name="script.content"><![CDATA[copy /Y Springie\Springie\bin\release\Springie.exe c:\projekty\test.zero-k.info\www\lobby
-copy /Y Springie\Springie\bin\release\Springie.version.txt c:\projekty\test.zero-k.info\www\lobby]]></param>
+          <param name="command.executable" value="robocopy" />
+          <param name="command.parameters" value="c:\temp\zkweb c:\projekty\zero-k.info\www /e" />
+          <param name="script.content"><![CDATA[robocopy UberServer c:\projekty\test.zero-k.info\uberserver /e
+if errorlevel 1 (
+  exit 0
+)]]></param>
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
@@ -41,14 +45,10 @@ if errorlevel 1 (
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
-      <runner id="RUNNER_35" name="Deploy Uberserver" type="simpleRunner">
+      <runner id="RUNNER_31" name="Deploy springie" type="simpleRunner">
         <parameters>
-          <param name="command.executable" value="robocopy" />
-          <param name="command.parameters" value="c:\temp\zkweb c:\projekty\zero-k.info\www /e" />
-          <param name="script.content"><![CDATA[robocopy UberServer c:\projekty\test.zero-k.info\uberserver /e
-if errorlevel 1 (
-  exit 0
-)]]></param>
+          <param name="script.content"><![CDATA[copy /Y Springie\Springie\bin\release\Springie.exe c:\projekty\test.zero-k.info\www\lobby
+copy /Y Springie\Springie\bin\release\Springie.version.txt c:\projekty\test.zero-k.info\www\lobby]]></param>
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
