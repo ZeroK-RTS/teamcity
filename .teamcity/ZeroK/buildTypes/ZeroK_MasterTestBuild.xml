@@ -6,9 +6,7 @@
     <options>
       <option name="buildNumberPattern" value="0.0.0.%build.counter%" />
     </options>
-    <parameters>
-      <param name="env.build.shorthash" value="" />
-    </parameters>
+    <parameters />
     <build-runners>
       <runner id="RUNNER_30" name="Rebuild all" type="VS.Solution">
         <parameters>
