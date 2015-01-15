@@ -10,7 +10,7 @@
           <param name="command.executable" value="robocopy" />
           <param name="command.parameters" value="c:\temp\zkweb c:\projekty\zero-k.info\www /e" />
           <param name="script.content"><![CDATA[robocopy UberServer c:\projekty\zero-k.info\uberserver /e
-echo %build.number% > c:\projekty\zero-k.info\uberserver\version.txt]]></param>
+echo %dep.ZeroK_StableLiveBuild.build.number% > c:\projekty\zero-k.info\uberserver\version.txt]]></param>
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
