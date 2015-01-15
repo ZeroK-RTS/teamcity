@@ -4,7 +4,7 @@
   <description />
   <settings>
     <options>
-      <option name="buildNumberPattern" value="%build.number%" />
+      <option name="buildNumberPattern" value="%dep.ZeroK_StableLiveBuild.build.number%" />
     </options>
     <parameters />
     <build-runners>
