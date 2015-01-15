@@ -8,7 +8,6 @@
     </options>
     <disabled-settings>
       <setting-ref ref="RUNNER_14" />
-      <setting-ref ref="RUNNER_9" />
     </disabled-settings>
     <parameters />
     <build-runners>
@@ -23,14 +22,6 @@
           <param name="teamcity.step.mode" value="default" />
           <param name="toolsVersion" value="12.0" />
           <param name="vs.version" value="vs2013" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_9" name="Deploy springie" type="simpleRunner">
-        <parameters>
-          <param name="script.content"><![CDATA[copy /Y Springie\Springie\bin\release\Springie.exe c:\projekty\zero-k.info\www\lobby
-copy /Y Springie\Springie\bin\release\Springie.version.txt c:\projekty\zero-k.info\www\lobby]]></param>
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
       <runner id="RUNNER_14" name="Deploy ZKL" type="simpleRunner">
