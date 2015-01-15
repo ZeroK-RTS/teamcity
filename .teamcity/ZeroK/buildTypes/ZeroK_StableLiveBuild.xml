@@ -61,7 +61,7 @@ copy /Y ZeroKLobby\bin\release\Zero-K.version.txt c:\projekty\zero-k.info\www\lo
       </runner>
     </build-runners>
     <vcs-settings>
-      <vcs-entry-ref root-id="ZeroK_ZeroKInfrastructure" />
+      <vcs-entry-ref root-id="ZeroK_ZeroKInfrastructure1_2" />
     </vcs-settings>
     <requirements />
     <build-triggers>
