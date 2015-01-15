@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vcs-root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="09d7d3b2-6475-4b74-abbe-995bc2aecdf9" type="jetbrains.git" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
-  <name>Zero-K infrastructure (1)</name>
+  <name>Zero-K infrastructure STABLE</name>
   <param name="agentCleanFilesPolicy" value="ALL_UNTRACKED" />
   <param name="agentCleanPolicy" value="ON_BRANCH_CHANGE" />
   <param name="authMethod" value="PASSWORD" />
