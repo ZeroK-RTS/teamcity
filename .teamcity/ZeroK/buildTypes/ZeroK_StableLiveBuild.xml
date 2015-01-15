@@ -8,7 +8,6 @@
     </options>
     <disabled-settings>
       <setting-ref ref="RUNNER_14" />
-      <setting-ref ref="RUNNER_8" />
       <setting-ref ref="RUNNER_9" />
     </disabled-settings>
     <parameters />
@@ -24,18 +23,6 @@
           <param name="teamcity.step.mode" value="default" />
           <param name="toolsVersion" value="12.0" />
           <param name="vs.version" value="vs2013" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_8" name="Deploy website" type="simpleRunner">
-        <parameters>
-          <param name="command.executable" value="robocopy" />
-          <param name="command.parameters" value="c:\temp\zkweb c:\projekty\zero-k.info\www /e" />
-          <param name="script.content"><![CDATA[robocopy zero-k.info\Deploy c:\projekty\zero-k.info\www /e
-if errorlevel 1 (
-  exit 0
-)]]></param>
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
       <runner id="RUNNER_9" name="Deploy springie" type="simpleRunner">
