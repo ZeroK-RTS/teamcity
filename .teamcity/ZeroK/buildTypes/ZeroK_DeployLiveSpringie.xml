@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="0c52161e-e79f-47fe-9b1d-30d308e6e601" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>Deploy LIVE Springie</name>
+  <description />
+  <settings>
+    <options>
+      <option name="buildNumberPattern" value="%dep.ZeroK_StableLiveBuild.build.number%" />
+    </options>
+    <parameters />
+    <build-runners>
+      <runner id="RUNNER_23" name="Deploy ZKL" type="simpleRunner">
+        <parameters>
+          <param name="script.content"><![CDATA[copy /Y ZeroKLobby\bin\release\Zero-K.exe c:\projekty\zero-k.info\www\lobby
+copy /Y ZeroKLobby\bin\release\Zero-K.version.txt c:\projekty\zero-k.info\www\lobby]]></param>
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="ZeroK_ZeroKInfrastructure1_2" />
+    </vcs-settings>
+    <requirements />
+    <build-triggers>
+      <build-trigger id="vcsTrigger" type="vcsTrigger">
+        <parameters>
+          <param name="groupCheckinsByCommitter" value="true" />
+          <param name="perCheckinTriggering" value="true" />
+          <param name="quietPeriodMode" value="DO_NOT_USE" />
+          <param name="triggerRules"><![CDATA[+:ZeroKLobby/**
++:Shared/**
++:Libs/**]]></param>
+        </parameters>
+      </build-trigger>
+    </build-triggers>
+    <dependencies>
+      <depend-on sourceBuildTypeId="ZeroK_StableLiveBuild">
+        <options>
+          <option name="run-build-if-dependency-failed" value="CANCEL" />
+          <option name="take-started-build-with-same-revisions" value="true" />
+          <option name="take-successful-builds-only" value="true" />
+        </options>
+      </depend-on>
+    </dependencies>
+    <cleanup />
+  </settings>
+</build-type>
+
