@@ -18,7 +18,7 @@
           <param name="groupCheckinsByCommitter" value="true" />
           <param name="perCheckinTriggering" value="true" />
           <param name="quietPeriodMode" value="DO_NOT_USE" />
-          <param name="triggerRules"><![CDATA[+:ZeroKLobby/**
+          <param name="triggerRules"><![CDATA[+:Springie/**
 +:Shared/**
 +:Libs/**]]></param>
         </parameters>
