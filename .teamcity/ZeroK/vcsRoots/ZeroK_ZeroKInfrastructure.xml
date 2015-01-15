@@ -8,7 +8,7 @@
   <param name="ignoreKnownHosts" value="true" />
   <param name="secure:password" value="zxxac08469f34dadd92775d03cbe80d301b" />
   <param name="submoduleCheckout" value="CHECKOUT" />
-  <param name="teamcity:branchSpec" value="stable" />
+  <param name="teamcity:branchSpec" value="+:stable" />
   <param name="url" value="https://github.com/ZeroK-RTS/Zero-K-Infrastructure.git" />
   <param name="username" value="Licho1" />
   <param name="usernameStyle" value="USERID" />
