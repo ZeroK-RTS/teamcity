@@ -8,18 +8,6 @@
     </options>
     <parameters />
     <build-runners>
-      <runner id="RUNNER_21" name="Deploy website" type="simpleRunner">
-        <parameters>
-          <param name="command.executable" value="robocopy" />
-          <param name="command.parameters" value="c:\temp\zkweb c:\projekty\zero-k.info\www /e" />
-          <param name="script.content"><![CDATA[robocopy zero-k.info\Deploy c:\projekty\zero-k.info\www /e
-if errorlevel 1 (
-  exit 0
-)]]></param>
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
-        </parameters>
-      </runner>
       <runner id="RUNNER_22" name="Deploy ZKL" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[copy /Y ZeroKLobby\bin\release\Zero-K.exe c:\projekty\zero-k.info\www\lobby
