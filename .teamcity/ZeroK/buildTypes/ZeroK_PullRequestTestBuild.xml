@@ -27,8 +27,6 @@
       <build-trigger id="vcsTrigger" type="vcsTrigger">
         <parameters>
           <param name="branchFilter" value="+:refs/pull/*/head" />
-          <param name="groupCheckinsByCommitter" value="true" />
-          <param name="perCheckinTriggering" value="true" />
         </parameters>
       </build-trigger>
     </build-triggers>
