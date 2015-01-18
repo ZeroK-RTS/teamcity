@@ -26,8 +26,6 @@ echo %build.number% > c:\projekty\zero-k.info\uberserver\version.txt]]></param>
     <build-triggers>
       <build-trigger id="vcsTrigger" type="vcsTrigger">
         <parameters>
-          <param name="groupCheckinsByCommitter" value="true" />
-          <param name="perCheckinTriggering" value="true" />
           <param name="quietPeriodMode" value="DO_NOT_USE" />
           <param name="triggerRules" value="+:UberServer/**" />
         </parameters>
