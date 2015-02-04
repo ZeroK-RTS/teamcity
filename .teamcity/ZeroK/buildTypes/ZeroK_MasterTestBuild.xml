@@ -21,14 +21,19 @@
           <param name="vs.version" value="vs2013" />
         </parameters>
       </runner>
-      <runner id="RUNNER_35" name="Deploy ZkLobbyServer" type="simpleRunner">
+      <runner id="RUNNER_35" name="Deploy ZkLobbyServer" type="jetbrains_powershell">
         <parameters>
-          <param name="command.executable" value="robocopy" />
-          <param name="command.parameters" value="c:\temp\zkweb c:\projekty\zero-k.info\www /e" />
-          <param name="script.content"><![CDATA[copy /Y ZkLobbyServer\bin\release\ZkLobbyServer.exe c:\projekty\test.zero-k.info\www\lobby
-copy /Y ZkLobbyServer\bin\release\ZkLobbyServer.version.txt c:\projekty\test.zero-k.info\www\lobby]]></param>
+          <param name="jetbrains_powershell_bitness" value="x86" />
+          <param name="jetbrains_powershell_execution" value="PS1" />
+          <param name="jetbrains_powershell_script_code"><![CDATA[stop-process -name ZkLobbyServer
+robocopy ZkLobbyServer\bin\release c:\projekty\test.zero-k.info\ZkLobbyServer /e
+if errorlevel 1 (
+  exit 0
+)
+cd c:\projekty\test.zero-k.info\ZkLobbyServer
+.\ZkLobbyServer.exe]]></param>
+          <param name="jetbrains_powershell_script_mode" value="CODE" />
           <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
       <runner id="RUNNER_32" name="Deploy website" type="simpleRunner">
