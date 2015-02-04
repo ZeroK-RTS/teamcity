@@ -29,7 +29,8 @@ copy /Y ZkLobbyServer\bin\release\ZkLobbyServer.version.txt c:\projekty\test.zer
           <param name="quietPeriodMode" value="DO_NOT_USE" />
           <param name="triggerRules"><![CDATA[+:ZkLobbyServer/**
 +:ZkData/**
-+:Shared/**]]></param>
++:Shared/**
++:Libs/**]]></param>
         </parameters>
       </build-trigger>
     </build-triggers>
