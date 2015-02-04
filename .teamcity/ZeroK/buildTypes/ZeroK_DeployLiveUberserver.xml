@@ -12,8 +12,8 @@
         <parameters>
           <param name="command.executable" value="robocopy" />
           <param name="command.parameters" value="c:\temp\zkweb c:\projekty\zero-k.info\www /e" />
-          <param name="script.content"><![CDATA[copy /Y ZkLobbyServer\bin\release\ZkLobbyServer.exe c:\projekty\test.zero-k.info\www\lobby
-copy /Y ZkLobbyServer\bin\release\ZkLobbyServer.version.txt c:\projekty\test.zero-k.info\www\lobby]]></param>
+          <param name="script.content"><![CDATA[copy /Y ZkLobbyServer\bin\release\ZkLobbyServer.exe c:\projekty\zero-k.info\www\lobby
+copy /Y ZkLobbyServer\release\ZkLobbyServer.version.txt c:\projekty\zero-k.info\www\lobby]]></param>
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
