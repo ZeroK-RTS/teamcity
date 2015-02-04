@@ -27,7 +27,9 @@ copy /Y ZkLobbyServer\bin\release\ZkLobbyServer.version.txt c:\projekty\test.zer
       <build-trigger id="vcsTrigger" type="vcsTrigger">
         <parameters>
           <param name="quietPeriodMode" value="DO_NOT_USE" />
-          <param name="triggerRules" value="+:UberServer/**" />
+          <param name="triggerRules"><![CDATA[+:ZkLobbyServer/**
++:ZkData/**
++:Shared/**]]></param>
         </parameters>
       </build-trigger>
     </build-triggers>
