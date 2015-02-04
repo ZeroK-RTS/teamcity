@@ -8,12 +8,19 @@
     </options>
     <parameters />
     <build-runners>
-      <runner id="RUNNER_22" name="Deploy ZKL" type="simpleRunner">
+      <runner id="RUNNER_22" name="Deploy ZKL" type="jetbrains_powershell">
         <parameters>
-          <param name="script.content"><![CDATA[copy /Y ZeroKLobby\bin\release\Zero-K.exe c:\projekty\zero-k.info\www\lobby
-copy /Y ZeroKLobby\bin\release\Zero-K.version.txt c:\projekty\zero-k.info\www\lobby]]></param>
+          <param name="jetbrains_powershell_bitness" value="x86" />
+          <param name="jetbrains_powershell_execution" value="PS1" />
+          <param name="jetbrains_powershell_script_code"><![CDATA[stop-process -name ZkLobbyServer
+robocopy ZkLobbyServer\bin\release c:\projekty\test.zero-k.info\ZkLobbyServer /e
+if errorlevel 1 (
+  exit 0
+)
+cd c:\projekty\test.zero-k.info\ZkLobbyServer
+.\ZkLobbyServer.exe]]></param>
+          <param name="jetbrains_powershell_script_mode" value="CODE" />
           <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
     </build-runners>
