@@ -12,7 +12,7 @@
         <parameters>
           <param name="command.executable" value="robocopy" />
           <param name="command.parameters" value="c:\temp\zkweb c:\projekty\zero-k.info\www /e" />
-          <param name="script.content"><![CDATA[robocopy unitpics c:\projekty\zero-k.info\www\img\Avatars /e
+          <param name="script.content"><![CDATA[robocopy zero-k.info\Deploy c:\projekty\zero-k.info\www /e
 if errorlevel 1 (
   exit 0
 )]]></param>
