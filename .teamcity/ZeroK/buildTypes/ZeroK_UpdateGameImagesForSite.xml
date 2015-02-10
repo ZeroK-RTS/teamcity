@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="fa394b7d-042d-4db5-8802-80b92b714ba8" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
-  <name>Update Game Images for Site</name>
+  <name>Update Avatars: LIVE</name>
   <description />
   <settings>
     <parameters />
