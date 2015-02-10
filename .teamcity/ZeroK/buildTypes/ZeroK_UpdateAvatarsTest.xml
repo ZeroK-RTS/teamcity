@@ -24,7 +24,6 @@ if errorlevel 1 (
       <build-trigger id="vcsTrigger" type="vcsTrigger">
         <parameters>
           <param name="quietPeriodMode" value="DO_NOT_USE" />
-          <param name="triggerRules" value="+:root=ZeroK_HttpsGithubComZeroKRtsZeroKGit;comment=VERSION\{:**" />
         </parameters>
       </build-trigger>
     </build-triggers>
