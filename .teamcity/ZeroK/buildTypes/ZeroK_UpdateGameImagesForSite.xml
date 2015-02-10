@@ -20,7 +20,14 @@ if errorlevel 1 (
       <vcs-entry-ref root-id="ZeroK_HttpsGithubComZeroKRtsZeroKGit" />
     </vcs-settings>
     <requirements />
-    <build-triggers />
+    <build-triggers>
+      <build-trigger id="vcsTrigger" type="vcsTrigger">
+        <parameters>
+          <param name="quietPeriodMode" value="DO_NOT_USE" />
+          <param name="triggerRules" value="+:root=ZeroK_HttpsGithubComZeroKRtsZeroKGit;comment=VERSION\{:**" />
+        </parameters>
+      </build-trigger>
+    </build-triggers>
     <cleanup />
   </settings>
 </build-type>
