@@ -8,6 +8,7 @@
       <runner id="RUNNER_26" name="" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[robocopy unitpics c:\projekty\test.zero-k.info\www\img\Avatars /e
+robocopy LuaRules\Images\awards c:\projekty\test.zero-k.info\www\img\Awards /e
 if errorlevel 1 (
   exit 0
 )]]></param>
