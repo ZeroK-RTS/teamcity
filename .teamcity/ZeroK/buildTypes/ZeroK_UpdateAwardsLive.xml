@@ -7,7 +7,7 @@
     <build-runners>
       <runner id="RUNNER_21" name="" type="simpleRunner">
         <parameters>
-          <param name="script.content"><![CDATA[robocopy LuaRules\Images\awards c:\projekty\test.zero-k.info\www\img\Awards /e
+          <param name="script.content"><![CDATA[robocopy LuaRules\Images\awards c:\projekty\zero-k.info\www\img\Awards /e
 if errorlevel 1 (
   exit 0
 )]]></param>
