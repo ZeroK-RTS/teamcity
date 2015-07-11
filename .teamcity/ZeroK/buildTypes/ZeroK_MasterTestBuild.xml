@@ -6,6 +6,9 @@
     <options>
       <option name="buildNumberPattern" value="0.0.0.%build.counter%" />
     </options>
+    <disabled-settings>
+      <setting-ref ref="RUNNER_35" />
+    </disabled-settings>
     <parameters />
     <build-runners>
       <runner id="RUNNER_30" name="Rebuild all" type="VS.Solution">
