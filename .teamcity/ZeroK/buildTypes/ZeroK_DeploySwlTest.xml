@@ -14,7 +14,7 @@
       </runner>
       <runner id="RUNNER_19" name="Deploy SWL: Test" type="simpleRunner">
         <parameters>
-          <param name="script.content"><![CDATA[robocopy unitpics c:\projekty\test.zero-k.info\www\weblobby /e
+          <param name="script.content"><![CDATA[robocopy . c:\projekty\test.zero-k.info\www\weblobby /e
 robocopy LuaRules\Images\awards c:\projekty\zero-k.info\www\img\Awards /e
 if errorlevel 1 (
   exit 0
