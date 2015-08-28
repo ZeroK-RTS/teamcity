@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="e1ab8449-9c75-4eaf-8bcc-6627b19bb4c3" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
   <name>Deploy SWL (test)</name>
-  <description>Deploys master branch SWL onto test.zero-k.info</description>
+  <description>Deploys reactjs SWL onto test.zero-k.info</description>
   <settings>
     <parameters />
     <build-runners>
