@@ -4,7 +4,15 @@
   <description>Deploys master branch SWL onto test.zero-k.info</description>
   <settings>
     <parameters />
-    <build-runners />
+    <build-runners>
+      <runner id="RUNNER_18" name="Preprocess" type="jonnyzzz.grunt">
+        <parameters>
+          <param name="jonnyzzz.grunt.mode" value="global" />
+          <param name="jonnyzzz.grunt.tasks" value="release" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+    </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="ZeroK_SpringWebLobbySwlWebsiteReactjs" />
     </vcs-settings>
