@@ -12,6 +12,17 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
+      <runner id="RUNNER_19" name="Deploy SWL: Test" type="simpleRunner">
+        <parameters>
+          <param name="script.content"><![CDATA[robocopy unitpics c:\projekty\test.zero-k.info\www\weblobby /e
+robocopy LuaRules\Images\awards c:\projekty\zero-k.info\www\img\Awards /e
+if errorlevel 1 (
+  exit 0
+)]]></param>
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="ZeroK_SpringWebLobbySwlWebsiteReactjs" />
