@@ -4,7 +4,7 @@
   <description>Deploys reactjs SWL onto test.zero-k.info</description>
   <settings>
     <parameters>
-      <param name="PATH"><![CDATA[C:\Program Files\CollabNet\Subversion Client;C:\Program Files (x86)\PHP\v5.
+      <param name="env.PATH"><![CDATA[C:\Program Files\CollabNet\Subversion Client;C:\Program Files (x86)\PHP\v5.
 6;C:\Program Files (x86)\Windows Resource Kits\Tools\;C:\Windows\system32;C:\Win
 dows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Pro
 gram Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files
