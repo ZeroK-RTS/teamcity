@@ -5,11 +5,14 @@
   <settings>
     <parameters />
     <build-runners>
-      <runner id="RUNNER_18" name="Preprocess" type="jonnyzzz.grunt">
+      <runner id="RUNNER_18" name="Preprocess" type="simpleRunner">
         <parameters>
-          <param name="jonnyzzz.grunt.mode" value="global" />
-          <param name="jonnyzzz.grunt.tasks" value="release" />
+          <param name="script.content"><![CDATA[grunt release
+if errorlevel 1 (
+  exit 0
+)]]></param>
           <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
       <runner id="RUNNER_19" name="Deploy SWL: Test" type="simpleRunner">
