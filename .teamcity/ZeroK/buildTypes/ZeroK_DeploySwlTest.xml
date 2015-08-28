@@ -21,7 +21,7 @@ if errorlevel 1 (
       <runner id="RUNNER_19" name="Deploy SWL: Test" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[robocopy . c:\projekty\test.zero-k.info\www\weblobby /e
-robocopy LuaRules\Images\awards c:\projekty\zero-k.info\www\img\Awards /e
+C:\projekty\WGET.EXE http://fb.me/react-with-addons-0.12.0.js -O C:\projekty\test.zero-k.info\www\weblobby\react-with-addons-0.12.0.js
 if errorlevel 1 (
   exit 0
 )]]></param>
