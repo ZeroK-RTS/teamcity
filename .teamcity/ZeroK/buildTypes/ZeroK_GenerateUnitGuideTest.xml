@@ -4,7 +4,14 @@
   <description>Generates experimental unitguide on ZK version releases</description>
   <settings>
     <parameters />
-    <build-runners />
+    <build-runners>
+      <runner id="RUNNER_21" name="" type="jonnyzzz.grunt">
+        <parameters>
+          <param name="jonnyzzz.grunt.mode" value="npm" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+    </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="ZeroK_HttpsGithubComZeroKRtsZeroKGit" />
       <vcs-entry-ref root-id="ZeroK_HttpsGithubComZeroKRtsZkBalanceGit" />
