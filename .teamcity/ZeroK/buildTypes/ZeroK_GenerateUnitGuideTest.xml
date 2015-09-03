@@ -33,6 +33,17 @@ if errorlevel 1 (
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
+      <runner id="RUNNER_29" name="deploy" type="simpleRunner">
+        <parameters>
+          <param name="script.content"><![CDATA[robocopy . c:\projekty\zero-k.info\zkmanual\www\test /e
+
+if errorlevel 1 (
+  exit 0
+)]]></param>
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="ZeroK_HttpsGithubComZeroKRtsZkBalanceGit" />
