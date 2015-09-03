@@ -6,7 +6,6 @@
     <parameters />
     <build-runners />
     <vcs-settings>
-      <vcs-entry-ref root-id="ZeroK_HttpsGithubComZeroKRtsZeroKGit" />
       <vcs-entry-ref root-id="ZeroK_HttpsGithubComZeroKRtsZkBalanceGit" />
     </vcs-settings>
     <requirements />
