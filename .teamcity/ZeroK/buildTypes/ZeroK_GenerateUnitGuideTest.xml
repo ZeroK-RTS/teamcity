@@ -15,8 +15,10 @@
           <param name="script.content"><![CDATA[PATH=C:\Program Files\CollabNet\Subversion Client;C:\Program Files (x86)\PHP\v5.6;C:\Program Files (x86)\Windows Resource Kits\Tools\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Users\admin\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Ruby22\bin;C:\Users\admin\AppData\Roaming\npm
 npm install grunt
 npm install
+echo GITHUB_COFFEE > config\github.coffee
 grunt fetch --prod
 grunt static --prod
+robocopy . c:\projekty\zero-k.info\zkmanual\www\test /e
 
 if errorlevel 1 (
   exit 0
