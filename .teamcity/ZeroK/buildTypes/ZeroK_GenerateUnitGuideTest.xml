@@ -38,7 +38,7 @@ if errorlevel 1 (
       </runner>
       <runner id="RUNNER_29" name="deploy" type="simpleRunner">
         <parameters>
-          <param name="script.content"><![CDATA[robocopy . c:\projekty\zero-k.info\zkmanual\www\test /e
+          <param name="script.content"><![CDATA[robocopy www c:\projekty\zero-k.info\zkmanual\www\test /e
 
 if errorlevel 1 (
   exit 0
