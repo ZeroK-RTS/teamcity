@@ -34,10 +34,10 @@ if errorlevel 1 (
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
-      <runner id="RUNNER_29" name="deploy" type="simpleRunner">
+      <runner id="RUNNER_34" name="fetch and build static" type="simpleRunner">
         <parameters>
-          <param name="script.content"><![CDATA[robocopy www c:\projekty\test.zero-k.info\zkmanual\ /e
-
+          <param name="script.content"><![CDATA[grunt fetch --prod
+grunt static --prod
 if errorlevel 1 (
   exit 0
 )]]></param>
@@ -45,10 +45,10 @@ if errorlevel 1 (
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
-      <runner id="RUNNER_34" name="fetch and build static" type="simpleRunner">
+      <runner id="RUNNER_29" name="deploy" type="simpleRunner">
         <parameters>
-          <param name="script.content"><![CDATA[grunt fetch --prod
-grunt static --prod
+          <param name="script.content"><![CDATA[robocopy www c:\projekty\test.zero-k.info\zkmanual\ /e
+
 if errorlevel 1 (
   exit 0
 )]]></param>
