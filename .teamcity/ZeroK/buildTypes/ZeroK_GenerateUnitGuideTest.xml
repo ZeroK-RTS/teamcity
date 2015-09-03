@@ -21,14 +21,12 @@ if errorlevel 1 (
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
-      <runner id="RUNNER_28" name="fetch" type="simpleRunner">
+      <runner id="RUNNER_28" name="configure github" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[echo module.exports.github = > config\github.coffee
 echo   username: "ZKManual" >> config\github.coffee
 echo   password: "q2x8CaRZN5PpyS7N" >> config\github.coffee
 echo   auth: "basic" >> config\github.coffee
-grunt fetch --prod
-grunt static --prod
 if errorlevel 1 (
   exit 0
 )]]></param>
