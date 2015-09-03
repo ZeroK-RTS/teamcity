@@ -55,7 +55,7 @@ if errorlevel 1 (
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
-      <runner id="RUNNER_36" name="" type="simpleRunner">
+      <runner id="RUNNER_36" name="build static" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[grunt static --prod
 if errorlevel 1 (
