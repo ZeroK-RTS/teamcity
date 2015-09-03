@@ -3,7 +3,12 @@
   <name>Generate UnitGuide (test)</name>
   <description>Generates experimental unitguide on ZK version releases</description>
   <settings>
-    <parameters />
+    <parameters>
+      <param name="github.coffee"><![CDATA[module.exports.github =
+  username: "ZKManual"
+  password: "q2x8CaRZN5PpyS7N"
+  auth: "basic"]]></param>
+    </parameters>
     <build-runners>
       <runner id="RUNNER_23" name="Build and deploy static unitguide" type="simpleRunner">
         <parameters>
