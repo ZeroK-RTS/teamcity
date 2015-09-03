@@ -32,7 +32,13 @@ if errorlevel 1 (
       <vcs-entry-ref root-id="ZeroK_HttpsGithubComZeroKRtsZkBalanceGit" />
     </vcs-settings>
     <requirements />
-    <build-triggers />
+    <build-triggers>
+      <build-trigger id="TRIGGER_1" type="buildDependencyTrigger">
+        <parameters>
+          <param name="dependsOn" value="ZeroK_UpdateSiteGameImagesLive" />
+        </parameters>
+      </build-trigger>
+    </build-triggers>
     <cleanup />
   </settings>
 </build-type>
