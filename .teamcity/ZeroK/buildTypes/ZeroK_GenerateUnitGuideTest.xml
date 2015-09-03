@@ -3,6 +3,9 @@
   <name>Generate UnitGuide (test)</name>
   <description>Generates experimental unitguide on ZK version releases</description>
   <settings>
+    <options>
+      <option name="shouldFailBuildOnAnyErrorMessage" value="true" />
+    </options>
     <parameters>
       <param name="env.GITHUB_COFFEE"><![CDATA[module.exports.github =
   username: "ZKManual"
