@@ -17,10 +17,9 @@ if errorlevel 1 (
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
-      <runner id="RUNNER_19" name="Deploy SWL: Test" type="simpleRunner">
+      <runner id="RUNNER_37" name="Build" type="simpleRunner">
         <parameters>
-          <param name="script.content"><![CDATA[robocopy . c:\projekty\test.zero-k.info\www\weblobby /e
-C:\projekty\WGET.EXE http://fb.me/react-with-addons-0.12.0.js -O C:\projekty\test.zero-k.info\www\weblobby\react-with-addons-0.12.0.js
+          <param name="script.content"><![CDATA[grunt release
 if errorlevel 1 (
   exit 0
 )]]></param>
@@ -28,9 +27,10 @@ if errorlevel 1 (
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
-      <runner id="RUNNER_37" name="Build" type="simpleRunner">
+      <runner id="RUNNER_19" name="Deploy SWL: Test" type="simpleRunner">
         <parameters>
-          <param name="script.content"><![CDATA[grunt release
+          <param name="script.content"><![CDATA[robocopy . c:\projekty\test.zero-k.info\www\weblobby /e
+C:\projekty\WGET.EXE http://fb.me/react-with-addons-0.12.0.js -O C:\projekty\test.zero-k.info\www\weblobby\react-with-addons-0.12.0.js
 if errorlevel 1 (
   exit 0
 )]]></param>
