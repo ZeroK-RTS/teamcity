@@ -11,7 +11,7 @@
           <param name="msbuild.prop.Configuration" value="Release" />
           <param name="msbuild_version" value="14.0" />
           <param name="run-platform" value="x86" />
-          <param name="runnerArgs" value="/p:Configuration=Release;DefineConstants=&quot;RELEASE;TRACE;TEST&quot;" />
+          <param name="runnerArgs" value="/p:Configuration=Release;DefineConstants=&quot;RELEASE;TRACE;TEST&quot;;PreBuildEvent=;PostBuildEvent=;" />
           <param name="targets" value="Rebuild" />
           <param name="teamcity.step.mode" value="default" />
           <param name="toolsVersion" value="14.0" />
