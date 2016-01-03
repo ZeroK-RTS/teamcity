@@ -31,6 +31,7 @@ if errorlevel 1 (
           <param name="quietPeriodMode" value="DO_NOT_USE" />
           <param name="triggerRules"><![CDATA[+:Zero-K.info/**
 +:ZkData/**
++:ZkLobbyServer/**
 +:Shared/**
 +:Libs/**]]></param>
         </parameters>
