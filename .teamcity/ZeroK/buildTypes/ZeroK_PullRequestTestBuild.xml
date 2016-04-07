@@ -5,6 +5,17 @@
   <settings>
     <parameters />
     <build-runners>
+      <runner id="RUNNER_40" name="Restore nuget packages" type="jb.nuget.installer">
+        <parameters>
+          <param name="nuget.path" value="?NuGet.CommandLine.DEFAULT.nupkg" />
+          <param name="nuget.updatePackages.mode" value="sln" />
+          <param name="nuget.use.restore" value="restore" />
+          <param name="nugetCustomPath" value="?NuGet.CommandLine.DEFAULT.nupkg" />
+          <param name="nugetPathSelector" value="?NuGet.CommandLine.DEFAULT.nupkg" />
+          <param name="sln.path" value="Zero-K.sln" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
       <runner id="RUNNER_27" name="Rebuild all" type="VS.Solution">
         <parameters>
           <param name="build-file-path" value="Zero-K.sln" />
@@ -16,17 +27,6 @@
           <param name="teamcity.step.mode" value="default" />
           <param name="toolsVersion" value="14.0" />
           <param name="vs.version" value="vs2015" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_40" name="Restore nuget packages" type="jb.nuget.installer">
-        <parameters>
-          <param name="nuget.path" value="?NuGet.CommandLine.DEFAULT.nupkg" />
-          <param name="nuget.updatePackages.mode" value="sln" />
-          <param name="nuget.use.restore" value="restore" />
-          <param name="nugetCustomPath" value="?NuGet.CommandLine.DEFAULT.nupkg" />
-          <param name="nugetPathSelector" value="?NuGet.CommandLine.DEFAULT.nupkg" />
-          <param name="sln.path" value="Zero-K.sln" />
-          <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
     </build-runners>
