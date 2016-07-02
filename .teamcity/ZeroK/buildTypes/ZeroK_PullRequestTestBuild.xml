@@ -20,6 +20,7 @@
         <parameters>
           <param name="build-file-path" value="Zero-K.sln" />
           <param name="msbuild.prop.Configuration" value="Release" />
+          <param name="msbuild.prop.Platform" value="x86" />
           <param name="msbuild_version" value="14.0" />
           <param name="run-platform" value="x86" />
           <param name="runnerArgs" value="/p:Configuration=Release;DefineConstants=&quot;RELEASE;TRACE;TEST&quot;" />
