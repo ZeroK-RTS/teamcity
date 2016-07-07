@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="b292fc67-4172-4a9e-a8a7-caed78c22294" paused="true" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="b292fc67-4172-4a9e-a8a7-caed78c22294" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
   <name>Deploy LIVE Zero-K Lobby</name>
   <description />
   <settings>
