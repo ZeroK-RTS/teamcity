@@ -56,14 +56,6 @@ if errorlevel 1 (
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
-      <runner id="RUNNER_31" name="Deploy springie" type="simpleRunner">
-        <parameters>
-          <param name="script.content"><![CDATA[copy /Y Springie\Springie\bin\release\Springie.exe c:\projekty\test.zero-k.info\www\lobby
-copy /Y Springie\Springie\bin\release\Springie.version.txt c:\projekty\test.zero-k.info\www\lobby]]></param>
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
-        </parameters>
-      </runner>
       <runner id="RUNNER_33" name="Deploy ZKL" type="simpleRunner">
         <parameters>
           <param name="script.content"><![CDATA[copy /Y ZeroKLobby\bin\release\Zero-K.exe c:\projekty\test.zero-k.info\www\lobby
