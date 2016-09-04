@@ -4,7 +4,7 @@
   <description>Build master</description>
   <settings>
     <options>
-      <option name="buildNumberPattern" value="1.3.2.%build.counter%" />
+      <option name="buildNumberPattern" value="1.4.9.%build.counter%" />
     </options>
     <parameters />
     <build-runners>
