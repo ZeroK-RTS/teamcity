@@ -60,10 +60,10 @@ copy /Y ZeroKLobby\bin\release\Zero-K.version.txt c:\projekty\test.zero-k.info\w
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
-      <runner id="RUNNER_24" name="Deploy ZKL (1)" type="simpleRunner">
+      <runner id="RUNNER_24" name="Deploy Chobby" type="simpleRunner">
         <parameters>
-          <param name="script.content"><![CDATA[copy /Y ZeroKLobby\bin\release\Zero-K.exe c:\projekty\test.zero-k.info\www\lobby
-copy /Y ZeroKLobby\bin\release\Zero-K.version.txt c:\projekty\test.zero-k.info\www\lobby]]></param>
+          <param name="script.content"><![CDATA[copy /Y ChobbyLauncher\bin\release\Chobby.exe c:\projekty\test.zero-k.info\www\lobby
+copy /Y ChobbyLauncher\bin\release\Chobby.version.txt c:\projekty\test.zero-k.info\www\lobby]]></param>
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
