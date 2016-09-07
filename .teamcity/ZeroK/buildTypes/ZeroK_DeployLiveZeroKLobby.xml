@@ -16,6 +16,14 @@ copy /Y ZeroKLobby\bin\release\Zero-K.version.txt c:\projekty\zero-k.info\www\lo
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
+      <runner id="RUNNER_31" name="Deploy Chobby" type="simpleRunner">
+        <parameters>
+          <param name="script.content"><![CDATA[copy /Y ChobbyLauncher\bin\release\Chobby.exe c:\projekty\test.zero-k.info\www\lobby
+copy /Y ChobbyLauncher\bin\release\Chobby.version.txt c:\projekty\test.zero-k.info\www\lobby]]></param>
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="ZeroK_ZeroKInfrastructure1_2" />
