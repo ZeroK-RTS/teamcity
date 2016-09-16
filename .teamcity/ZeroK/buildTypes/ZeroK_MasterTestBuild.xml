@@ -40,13 +40,6 @@
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
-      <runner id="RUNNER_43" name="START application pool" type="simpleRunner">
-        <parameters>
-          <param name="script.content" value="c:\Windows\System32\inetsrv\appcmd.exe start apppool /apppool.name: test.zero-k.info" />
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
-        </parameters>
-      </runner>
       <runner id="RUNNER_41" name="Migrate database" type="simpleRunner">
         <parameters>
           <param name="script.content" value="MigrateDatabase\bin\release\MigrateDatabase.exe" />
@@ -62,6 +55,13 @@
 if errorlevel 1 (
   exit 0
 )]]></param>
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_43" name="START application pool" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="c:\Windows\System32\inetsrv\appcmd.exe start apppool /apppool.name: test.zero-k.info" />
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
