@@ -33,7 +33,7 @@
           <param name="vs.version" value="vs2015" />
         </parameters>
       </runner>
-      <runner id="RUNNER_35" name="Turn off application pool" type="simpleRunner">
+      <runner id="RUNNER_35" name="STOP application pool" type="simpleRunner">
         <parameters>
           <param name="script.content" value="c:\Windows\System32\inetsrv\appcmd.exe stop apppool /apppool.name: test.zero-k.info" />
           <param name="teamcity.step.mode" value="default" />
