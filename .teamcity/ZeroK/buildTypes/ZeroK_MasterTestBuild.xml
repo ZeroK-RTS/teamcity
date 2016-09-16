@@ -40,6 +40,13 @@
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
+      <runner id="RUNNER_43" name="Turn off application pool (1)" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="c:\Windows\System32\inetsrv\appcmd.exe stop apppool /apppool.name: test.zero-k.info" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
       <runner id="RUNNER_41" name="Migrate database" type="simpleRunner">
         <parameters>
           <param name="script.content" value="MigrateDatabase\bin\release\MigrateDatabase.exe" />
