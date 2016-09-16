@@ -8,6 +8,13 @@
     </options>
     <parameters />
     <build-runners>
+      <runner id="RUNNER_44" name="STOP application pool" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="c:\Windows\System32\inetsrv\appcmd.exe stop apppool zero-k.info" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
       <runner id="RUNNER_42" name="Migrate database" type="simpleRunner">
         <parameters>
           <param name="script.content" value="MigrateDatabase\bin\release\MigrateDatabase.exe" />
@@ -23,13 +30,6 @@
 if errorlevel 1 (
   exit 0
 )]]></param>
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_44" name="STOP application pool" type="simpleRunner">
-        <parameters>
-          <param name="script.content" value="c:\Windows\System32\inetsrv\appcmd.exe stop apppool zero-k.info" />
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
