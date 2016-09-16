@@ -35,7 +35,7 @@
       </runner>
       <runner id="RUNNER_35" name="STOP application pool" type="simpleRunner">
         <parameters>
-          <param name="script.content" value="c:\Windows\System32\inetsrv\appcmd.exe stop apppool /apppool.name: test.zero-k.info" />
+          <param name="script.content" value="c:\Windows\System32\inetsrv\appcmd.exe stop apppool test.zero-k.info" />
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
