@@ -35,7 +35,8 @@ copy /Y ChobbyLauncher\bin\release\Chobby.version.txt c:\projekty\zero-k.info\ww
           <param name="quietPeriodMode" value="DO_NOT_USE" />
           <param name="triggerRules"><![CDATA[+:ZeroKLobby/**
 +:Shared/**
-+:Libs/**]]></param>
++:Libs/**
++:ChobbyLauncher/**]]></param>
         </parameters>
       </build-trigger>
     </build-triggers>
