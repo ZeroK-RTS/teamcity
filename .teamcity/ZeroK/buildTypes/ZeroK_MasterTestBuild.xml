@@ -82,6 +82,17 @@ copy /Y ChobbyLauncher\bin\release\Chobby.version.txt c:\projekty\test.zero-k.in
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
+      <runner id="RUNNER_18" name="Copy steam pipeline files" type="simpleRunner">
+        <parameters>
+          <param name="script.content"><![CDATA[robocopy SteamRoot c:\projekty\zero-k.info\steamworks\tools\ContentBuilder\content /e
+robocopy SteamScripts c:\projekty\zero-k.info\steamworks\tools\ContentBuilder\scripts /e
+if errorlevel 1 (
+  exit 0
+)]]></param>
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="ZeroK_ZeroKInfrastructure" />
