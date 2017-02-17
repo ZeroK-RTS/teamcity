@@ -35,8 +35,8 @@
       </runner>
       <runner id="RUNNER_18" name="Copy steam pipeline files" type="simpleRunner">
         <parameters>
-          <param name="script.content"><![CDATA[robocopy SteamRoot c:\projekty\zero-k.info\steamworks\tools\ContentBuilder\content /e
-robocopy SteamScripts c:\projekty\zero-k.info\steamworks\tools\ContentBuilder\scripts /e
+          <param name="script.content"><![CDATA[robocopy SteamRoot c:\projekty\test.zero-k.info\steamworks\tools\ContentBuilder\content /e
+robocopy SteamScripts c:\projekty\test.zero-k.info\steamworks\tools\ContentBuilder\scripts /e
 if errorlevel 1 (
   exit 0
 )]]></param>
