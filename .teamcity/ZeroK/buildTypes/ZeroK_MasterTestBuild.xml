@@ -93,6 +93,16 @@ copy /Y ChobbyLauncher\bin\release\Chobby.version.txt c:\projekty\test.zero-k.in
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
+      <runner id="RUNNER_19" name="Deploy presskit" type="simpleRunner">
+        <parameters>
+          <param name="script.content"><![CDATA[robocopy presskit c:\projekty\test.zero-k.info\presskit /e
+if errorlevel 1 (
+  exit 0
+)]]></param>
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="ZeroK_ZeroKInfrastructure" />
