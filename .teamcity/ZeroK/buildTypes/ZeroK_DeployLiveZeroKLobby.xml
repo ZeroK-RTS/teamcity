@@ -10,8 +10,8 @@
     <build-runners>
       <runner id="RUNNER_22" name="Deploy ZKL" type="simpleRunner">
         <parameters>
-          <param name="script.content"><![CDATA[copy /Y ZeroKLobby\bin\release\Zero-K.exe c:\projekty\zero-k.info\www\lobby
-copy /Y ZeroKLobby\bin\release\Zero-K.version.txt c:\projekty\zero-k.info\www\lobby]]></param>
+          <param name="script.content"><![CDATA[copy /Y ZeroKLobby\bin\release\Zero-Klobby.exe c:\projekty\zero-k.info\www\lobby
+copy /Y ZeroKLobby\bin\release\Zero-Klobby.version.txt c:\projekty\zero-k.info\www\lobby]]></param>
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
