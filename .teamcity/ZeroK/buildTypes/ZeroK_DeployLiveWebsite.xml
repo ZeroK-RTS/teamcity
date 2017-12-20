@@ -51,6 +51,16 @@ if errorlevel 1 (
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
+      <runner id="RUNNER_28" name="Copy resources to test" type="simpleRunner">
+        <parameters>
+          <param name="script.content"><![CDATA[robocopy c:\projekty\zero-k.info\www\resources c:\projekty\test.zero-k.info\www\resources /e
+if errorlevel 1 (
+  exit 0
+)]]></param>
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="ZeroK_ZeroKInfrastructure1_2" />
