@@ -6,6 +6,9 @@
     <options>
       <option name="buildNumberPattern" value="%dep.ZeroK_StableLiveBuild.build.number%" />
     </options>
+    <disabled-settings>
+      <setting-ref ref="RUNNER_31" />
+    </disabled-settings>
     <parameters />
     <build-runners>
       <runner id="RUNNER_22" name="Deploy ZKL" type="simpleRunner">
